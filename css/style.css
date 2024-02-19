@@ -22,3 +22,11 @@
     background-color: #1DD100;
 }
 
+.offer-1{
+    background-image: url(../images/cupon-devider.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(60%);
+    
+}
+
