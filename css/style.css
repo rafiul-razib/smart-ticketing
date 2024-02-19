@@ -1,12 +1,12 @@
 
 
-.row{
+/* .row{
     width: 40px;
     border: 2px solid red;
-}
+} */
 
 .driver, .seat{
-    width: 4rem;
+    /* width: 4rem; */
     display: flex;
     justify-content: center;
     background-color: lightgray;
