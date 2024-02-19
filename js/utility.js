@@ -27,6 +27,8 @@ function calculateTotal(){
     const numberOfSeat = selectedSeats.length
     const totalCost = 550*numberOfSeat;
     const totalPrice = document.getElementById('total-price');
+    const grandPrice = document.getElementById('grand-total');
     totalPrice.innerText = totalCost
-
+    grandPrice.innerText = totalCost
+    
 }
