@@ -8,7 +8,8 @@ document.getElementById('bus').addEventListener('click', function(event){
     if(clickedSeat.length === 2 && selectedSeats.includes(clickedSeat)=== false && selectedSeats.length<=3){
         selectedSeats.push(clickedSeat)
         selection.classList.add('bg-green', 'text-white')
-        // console.log(selection)
+        const btnNext = document.getElementById('btn-next');
+        btnNext.classList.remove('btn-disabled')
 
         decreaseNumberById()
         increaseNumberById()
@@ -17,7 +18,7 @@ document.getElementById('bus').addEventListener('click', function(event){
         const tableRow = document.createElement('tr');
         tableRow.innerHTML = `<td>${clickedSeat}</td>
                             <td>Economy</td>
-                            <td>550</td>`;
+                            <td class="text-center">550</td>`;
         takenSeat.appendChild(tableRow)
         calculateTotal()
 
@@ -45,6 +46,8 @@ document.getElementById('coupon-btn').addEventListener('click', function(){
         const discountField = document.getElementById('totalDiscountField');
         discountField.classList.remove('hidden')
         discountOption.classList.add('hidden')
+        const btnNext = document.getElementById('btn-next');
+        btnNext.classList.remove('btn-disabled')
     }
     else if(couponCode.value === 'Couple 20'){
         console.log('you got 20%')
@@ -59,8 +62,13 @@ document.getElementById('coupon-btn').addEventListener('click', function(){
         const discountField = document.getElementById('totalDiscountField');
         discountField.classList.remove('hidden')
         discountOption.classList.add('hidden');
+       
     }
     else{
         console.log('invalid coupon')
     }
 })
+
+
+
+
