@@ -1,4 +1,24 @@
-.btn{
-    width: 48px;
-    height: 110px;
+
+
+.row{
+    width: 40px;
+    border: 2px solid red;
 }
+
+.driver, .seat{
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.driver{
+    margin: 20px 0;
+}
+
+.seat:hover{
+    color: #FFFFFF;
+    background-color: #1DD100;
+}
+
